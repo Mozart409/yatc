@@ -1,0 +1,17 @@
+{
+  "name": "yatc",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "ncc build src/index.ts -o dist -m",
+    "dev": "ncc run src/index.ts",
+    "prepublish": "ncc build src/index.ts -o dist -m"
+  },
+  "dependencies": {
+    "fs-extra": "^9.0.1",
+    "minimist": "^1.2.5",
+    "prompts": "^2.4.0",
+    "update-notifier": "^5.0.1"
+  }
+}
